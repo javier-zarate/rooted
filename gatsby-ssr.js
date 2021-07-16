@@ -4,6 +4,7 @@ import { CartContextProvider } from './src/context/CartContext';
 import { GlobalStyle } from './src/components/globalStyles';
 
 export const wrapRootElement = ({ element }) => (
+  // same as gastby-browser.js
   <ProductContextProvider>
     <CartContextProvider>{element}</CartContextProvider>
   </ProductContextProvider>

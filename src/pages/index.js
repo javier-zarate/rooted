@@ -4,8 +4,8 @@ import { Layout, SEO } from 'components';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to the Gatsby &amp; Shopify starter.</p>
+    <h1>Hello! React is Live! </h1>
+    <p>Welcome to the Gatsby &amp; Shopify site. UNDER CONSTRUCTION.</p>
   </Layout>
 );
 
