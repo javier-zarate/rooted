@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Layout } from 'components';
+import { Layout, ImageGallery } from 'components';
 import { Grid } from './styles';
 
 // this is a tagged template literal
@@ -13,10 +13,11 @@ export const query = graphql`
       title
       description
       images {
+        id
         localFile {
           childImageSharp {
             fluid(maxWidth: 300) {
-              src
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
@@ -36,7 +37,7 @@ export default function ProductTemplate({ data }) {
           <h1>{data.shopifyProduct.title}</h1>
           <p>{data.shopifyProduct.description}</p>
         </div>
-        <div>IMAGES</div>
+        <ImageGallery images={data.shopifyProduct.images} />
       </Grid>
     </Layout>
   );
