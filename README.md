@@ -21,7 +21,7 @@
 | About Page | &#10060; | Mission statement page and description about store owner and production process | 
 | Blog | &#10060; | Blog section where store owner can write blogs about proccess, lifestyle and wellness |
 
-## Rooted
+## About Rooted
 ---
 Rooted is a health and wellness eCommerce site where customer can navigate too to purchase goods. Rooted centers on creating holistic products such as
 Elderberry Syrup, Sea Moss puree, and other homemade porducts for their health benefits and natural qualities. Customer can edit, update, delete, product
