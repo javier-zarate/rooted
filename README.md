@@ -1,9 +1,8 @@
 <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.18169-9/13754348_1735577500046419_9134668357838244508_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lMF_O5nM_GQAX8BZQQW&_nc_ht=scontent-lax3-2.xx&oh=8b1c5c63ce6ab45ea7bb202de283f1ff&oe=612813E5" alt="logo" width="250" height="250" />
-<!-- <a src="https://github.com/javier-zarate/rooted/issues"
-<!-- [![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest)[![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest)[![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest) --> 
 
-[![Latest Github release](https://img.shields.io/github/issues/javier-zarate/rooted)](https://github.com/javier-zarate/rooted/issues)
 
+[![Github Issues](https://img.shields.io/github/issues/javier-zarate/rooted)](https://github.com/javier-zarate/rooted/issues)
+[![Latest Github Release](https://img.shields.io/github/v/tag/javier-zarate/rooted?label=release)](https://github.com/javier-zarate/rooted/releases)
 
 ### A Simple eCommerce Site for Purchasing Homemade Health and Wellness Products :handbag:
 
