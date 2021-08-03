@@ -2,6 +2,9 @@
 <!-- <a src="https://github.com/javier-zarate/rooted/issues"
 <!-- [![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest)[![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest)[![Latest Github release](https://img.shields.io/github/v/release/javier-zarate/rooted.svg)](https://github.com/javier-zarate/rooted/releases/latest) --> 
 
+[![Latest Github release](https://img.shields.io/github/issues/javier-zarate/rooted)](https://github.com/javier-zarate/rooted/issues)
+
+
 ### A Simple eCommerce Site for Purchasing Homemade Health and Wellness Products :handbag:
 
 ## Deployed
