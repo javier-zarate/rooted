@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import { Layout, ImageGallery } from 'components';
-import { Grid } from './styles';
+import { Grid, SelectWrapper } from './styles';
+import CartContext from 'context/CartContext';
 
 // this is a tagged template literal
 // exporting a query in gatsby like this is called a "page query"
@@ -10,6 +11,7 @@ import { Grid } from './styles';
 export const query = graphql`
   query ProductQuery($shopifyId: String) {
     shopifyProduct(shopifyId: { eq: $shopifyId }) {
+      shopifyId
       title
       description
       images {
@@ -29,13 +31,33 @@ export const query = graphql`
 // When you export a page query like above
 // Gatsby will inject the result into props under data
 export default function ProductTemplate({ data }) {
-  console.log(data);
+  const { getProductById } = useContext(CartContext);
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    getProductById(data.shopifyProduct.shopifyId).then(result => {
+      setProduct(result);
+    });
+  }, [getProductById, setProduct, data.shopifyProduct.shopifyId]);
+
   return (
     <Layout>
       <Grid>
         <div>
           <h1>{data.shopifyProduct.title}</h1>
           <p>{data.shopifyProduct.description}</p>
+          {product?.availableForSale && (
+            <>
+              <SelectWrapper>
+                <strong>Variant</strong>
+                <select>
+                  {product?.variants.map(item => (
+                    <option key={item.id}>{item.title}</option>
+                  ))}
+                </select>
+              </SelectWrapper>
+            </>
+          )}
         </div>
         <ImageGallery images={data.shopifyProduct.images} />
       </Grid>

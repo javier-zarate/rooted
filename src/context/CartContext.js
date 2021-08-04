@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, createContext} from 'react';
 import Client from 'shopify-buy';
 
 const client = Client.buildClient({
@@ -10,9 +10,12 @@ const defaultState = {
   cart: {},
 };
 
-const CartContext = React.createContext(defaultState);
+const CartContext = createContext(defaultState);
 export default CartContext;
 
+// everytime that the page is refreshed the cart will be saved on to local storage
+// save checkout between sessions
+// it will be loaded into local stat to be able to munipulate it
 export function CartContextProvider({ children }) {
   const [checkout, setCheckout] = useState(
     JSON.parse(
@@ -23,7 +26,9 @@ export function CartContextProvider({ children }) {
   const [successfulOrder, setSuccessfulOrder] = useState(null);
   const checkoutId = checkout?.id;
 
-  React.useEffect(() => {
+  // when component is first mounted any existing checkout will be loaded into
+  // local state from local storage
+  useEffect(() => {
     const getCheckout = async () => {
       if (checkoutId && typeof window !== 'undefined') {
         const fetchedCheckout = await client.checkout.fetch(checkoutId);
@@ -41,6 +46,7 @@ export function CartContextProvider({ children }) {
     getCheckout();
   }, [setCheckout, setSuccessfulOrder, checkoutId]);
 
+  // API call to ShopifyAPI
   async function getProductById(productId) {
     const product = await client.product.fetch(productId);
     return product;
