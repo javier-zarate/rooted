@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import { Layout, ImageGallery } from 'components';
-import { Grid, SelectWrapper } from './styles';
+import { Grid, SelectWrapper, Price } from './styles';
 import CartContext from 'context/CartContext';
 
 // this is a tagged template literal
@@ -33,13 +33,20 @@ export const query = graphql`
 export default function ProductTemplate({ data }) {
   const { getProductById } = useContext(CartContext);
   const [product, setProduct] = useState(null);
+  const [selectedVariant, setSelectedVariant] = useState(null);
 
   useEffect(() => {
     getProductById(data.shopifyProduct.shopifyId).then(result => {
       setProduct(result);
+      setSelectedVariant(result.variants[0]);
     });
   }, [getProductById, setProduct, data.shopifyProduct.shopifyId]);
 
+  const handleVariantChange = e => {
+    setSelectedVariant(
+      product?.variants.find(item => item.id === e.target.value)
+    );
+  };
   return (
     <Layout>
       <Grid>
@@ -50,12 +57,18 @@ export default function ProductTemplate({ data }) {
             <>
               <SelectWrapper>
                 <strong>Variant</strong>
-                <select>
+                <select
+                  onChange={handleVariantChange}
+                  onBlur={handleVariantChange}
+                >
                   {product?.variants.map(item => (
-                    <option key={item.id}>{item.title}</option>
+                    <option key={item.id} value={item.id}>
+                      {item.title}
+                    </option>
                   ))}
                 </select>
               </SelectWrapper>
+              {!!selectedVariant && <Price>${selectedVariant?.price}</Price>}
             </>
           )}
         </div>
