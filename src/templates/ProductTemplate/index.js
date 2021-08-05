@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { Layout, ImageGallery } from 'components';
 import { Grid, SelectWrapper, Price } from './styles';
 import CartContext from 'context/CartContext';
+import { navigate, useLocation } from '@reach/router';
 
 // this is a tagged template literal
 // exporting a query in gatsby like this is called a "page query"
@@ -34,6 +35,8 @@ export default function ProductTemplate({ data }) {
   const { getProductById } = useContext(CartContext);
   const [product, setProduct] = useState(null);
   const [selectedVariant, setSelectedVariant] = useState(null);
+  const { search, origin, pathname } = useLocation();
+  console.log(search, origin, pathname);
 
   useEffect(() => {
     getProductById(data.shopifyProduct.shopifyId).then(result => {
@@ -43,9 +46,13 @@ export default function ProductTemplate({ data }) {
   }, [getProductById, setProduct, data.shopifyProduct.shopifyId]);
 
   const handleVariantChange = e => {
-    setSelectedVariant(
-      product?.variants.find(item => item.id === e.target.value)
+    const newVariant = product?.variants.find(
+      item => item.id === e.target.value
     );
+    setSelectedVariant(newVariant);
+    navigate(`${origin}${pathname}?variant=${encodeURIComponent(newVariant)}`, {
+      replace: true,
+    });
   };
   return (
     <Layout>
