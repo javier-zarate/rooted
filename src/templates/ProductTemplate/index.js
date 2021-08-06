@@ -40,13 +40,12 @@ export default function ProductTemplate({ data }) {
   const { search, origin, pathname } = useLocation();
   const variantId = queryString.parse(search).variant;
 
-  // console.log(search, origin, pathname);
-
   useEffect(() => {
     getProductById(data.shopifyProduct.shopifyId).then(result => {
       setProduct(result);
       setSelectedVariant(
-        result.variants.find(({ id }) => id === variantId) || result.variants[0]);
+        result.variants.find(({ id }) => id === variantId) || result.variants[0]
+      );
     });
   }, [getProductById, setProduct, data.shopifyProduct.shopifyId, variantId]);
 
@@ -55,9 +54,12 @@ export default function ProductTemplate({ data }) {
       item => item.id === e.target.value
     );
     setSelectedVariant(newVariant);
-    navigate(`${origin}${pathname}?variant=${encodeURIComponent(newVariant.id)}`, {
-      replace: true,
-    });
+    navigate(
+      `${origin}${pathname}?variant=${encodeURIComponent(newVariant.id)}`,
+      {
+        replace: true,
+      }
+    );
   };
 
   return (
@@ -86,7 +88,10 @@ export default function ProductTemplate({ data }) {
             </>
           )}
         </div>
-        <ImageGallery images={data.shopifyProduct.images} />
+        <ImageGallery
+          selectedVariantImageId={selectedVariant?.image.id}
+          images={data.shopifyProduct.images}
+        />
       </Grid>
     </Layout>
   );
