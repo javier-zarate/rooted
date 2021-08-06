@@ -11,8 +11,7 @@ export function ImageGallery({ images, selectedVariantImageId }) {
   // useEffect will run everytime thtat the selectedVariantImageId changes
   useEffect(() => {
     setActiveImageThumbnail(images.find(({ id }) => id === selectedVariantImageId) || images[0])
-  }, [selectedVariantImageId, images, setActiveImageThumbnail])
-
+  }, [selectedVariantImageId, images,  setActiveImageThumbnail])
 
   const handleClick = image => {
     setActiveImageThumbnail(image);

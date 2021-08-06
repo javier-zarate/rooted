@@ -70,23 +70,25 @@ export default function ProductTemplate({ data }) {
           <p>{data.shopifyProduct.description}</p>
           {product?.availableForSale && !!selectedVariant && (
             <>
-              <SelectWrapper>
-                <strong>Variant</strong>
-                <select
-                  onChange={handleVariantChange}
-                  // onBlur={handleVariantChange}
-                  value={selectedVariant.id}
-                >
-                  {product?.variants.map(item => (
-                    <option key={item.id} value={item.id}>
-                      {item.title}
-                    </option>
-                  ))}
-                </select>
-              </SelectWrapper>
-              {!!selectedVariant && <Price>${selectedVariant?.price}</Price>}
+              {product?.variants.length > 1 && (
+                <SelectWrapper>
+                  <strong>Variant</strong>
+                  <select
+                    onChange={handleVariantChange}
+                    value={selectedVariant.id}
+                  >
+                    {product?.variants.map(item => (
+                      <option key={item.id} value={item.id}>
+                        {item.title}
+                      </option>
+                    ))}
+                  </select>
+                </SelectWrapper>
+              )}
+
             </>
           )}
+          {!!selectedVariant && <Price>${selectedVariant?.price}</Price>}
         </div>
         <ImageGallery
           selectedVariantImageId={selectedVariant?.image.id}
