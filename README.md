@@ -19,7 +19,7 @@
 | Feature  |  Coded?       | Description  |
 |----------|:-------------:|:-------------|
 | Connect to Shopify API| &#10004; | Shopify API used to list products and checkout |
-| Product variants Unique URI | &#10004; | Browsing product variants adds unique query string to URL persisting in localStorage |
+| Product Variants Unique URI | &#10004; | Browsing product variants adds unique query string to URL persisting in localStorage |
 | Add Products to Cart | &#10060; | browse products and create a cart by clicking "adding to cart" button |
 | View Cart | &#10060; | View items in your cart, edit or delete quantity |
 | Checkout | &#10060; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
