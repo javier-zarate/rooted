@@ -19,10 +19,11 @@
 | Feature  |  Coded?       | Description  |
 |----------|:-------------:|:-------------|
 | Connect to Shopify API| &#10004; | Shopify API used to list products and checkout |
+| Product variants Unique URI | &#10004; | Browsing product variants adds unique query string to URL persisting in localStorage |
 | Add Products to Cart | &#10060; | browse products and create a cart by clicking "adding to cart" button |
 | View Cart | &#10060; | View items in your cart, edit or delete quantity |
 | Checkout | &#10060; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
-| About Page | &#10060; | Mission statement page and description about store owner and production process | 
+| About Page | &#10060; | Mission statement page and description about store owner and production process |
 | Blog | &#10060; | Blog section where store owner can write blogs about proccess, lifestyle and wellness |
 
 ## About Rooted
@@ -32,9 +33,9 @@ Elderberry Syrup, Sea Moss puree, and other homemade porducts for their health b
 inventory as well as track sales, create promotions all on her shopify account.
 The Rooted site then connects to the [Shopify API](https://shopify.dev/api/admin/rest/reference) to render data using [Gatsy.js](https://www.gatsbyjs.com/).
 Customers can browse and checkout on the site, payments are processed again by connecting to [Shopify API](https://shopify.dev/api/admin/rest/reference).
-Shopify is used only to render the products and to checkout with their [payment platform](https://www.shopify.com/payment-gateways). 
- 
-## Technologies 
+Shopify is used only to render the products and to checkout with their [payment platform](https://www.shopify.com/payment-gateways).
+
+## Technologies
 ---
 - [Gatsy.js](https://www.gatsbyjs.com/)
 - [React](https://reactjs.org/)
