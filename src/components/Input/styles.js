@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const InputForm = styled.input`
+export const Input = styled.input`
   border: 1px solid #ccc;
   display: block;
   font-size: 16px;

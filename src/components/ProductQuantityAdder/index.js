@@ -9,7 +9,7 @@ export function ProductQuantityAdder({ available, variantId }) {
       <strong>Quantity</strong>
       <form>
         <Input />
-        <Button>Add to cart</Button>
+        <Button fullWidth>Add to cart</Button>
       </form>
     </ProductQuantityAdderWrapper>
   );
