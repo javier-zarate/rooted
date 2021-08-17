@@ -20,8 +20,8 @@
 |----------|:-------------:|:-------------|
 | Connect to Shopify API| &#10004; | Shopify API used to list products and checkout |
 | Product Variants Unique URI | &#10004; | Browsing product variants adds unique query string to URL persisting in localStorage |
-| Add Products to Cart | &#10060; | browse products and create a cart by clicking "adding to cart" button |
-| View Cart | &#10060; | View items in your cart, edit or delete quantity |
+| Add Products to Cart | &#10004; | browse products and create a cart by clicking "adding to cart" button |
+| View Cart |&#10004; | View items in your cart, edit or delete quantity |
 | Checkout | &#10060; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
 | About Page | &#10060; | Mission statement page and description about store owner and production process |
 | Blog | &#10060; | Blog section where store owner can write blogs about proccess, lifestyle and wellness |
