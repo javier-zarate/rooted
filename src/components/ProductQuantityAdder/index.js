@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { ProductQuantityAdderWrapper } from './styles';
 import { Button } from '../Button';
 import { Input } from '../Input';
+import CartContext from 'context/CartContext';
 
 export function ProductQuantityAdder({ available, variantId }) {
   const [quantity, setQuantity] = useState(1);
+  const { updateLineItem } = useContext(CartContext);
 
   const handleQuantityChange = e => {
     setQuantity(e.currentTarget.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
-  }
+    updateLineItem({ variantId, quantity: parseInt(quantity, 10)});
+  };
 
   return (
     <ProductQuantityAdderWrapper>
