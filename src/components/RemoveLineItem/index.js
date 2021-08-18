@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import CartContext from 'context/CartContext';
 import { FaTrashAlt } from 'react-icons/fa';
+import { Icon } from './styles';
 
 export function RemoveLineItem({ lineItemId }) {
   const { removeLineItem } = useContext(CartContext);
@@ -10,8 +11,8 @@ export function RemoveLineItem({ lineItemId }) {
   }
 
   return (
-    <div onClick={handleClick}>
+    <Icon onClick={handleClick}>
       <FaTrashAlt />
-    </div>
+    </Icon>
   )
 }
