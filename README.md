@@ -22,9 +22,11 @@
 | Product Variants Unique URI | &#10004; | Browsing product variants adds unique query string to URL persisting in localStorage |
 | Add Products to Cart | &#10004; | browse products and create a cart by clicking "adding to cart" button |
 | View Cart | &#10004; | View items in your cart, edit or delete quantity |
-| Shopify Collection Tiles on Landing Page | &#10060; | Product collections are rendered  (Featured, Sales, Season etc)|
+| Shopify Collection Tiles on Landing Page | &#10004; | Product collections are rendered  (Featured, Sales, Season etc)|
 | Checkout | &#10060; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
 | About Page | &#10060; | Mission statement page and description about store owner and production process |
+| User Reviews | &#10060; | Slideshow of user reviews (mix of Instagram DM's and in site review |
+| Leave a review | &#10060; | use Instagram API to have user name and avatar or anonymous review as well ass paginated review page (sorted by rating or date |
 | Blog | &#10060; | Blog section where store owner can write blogs about proccess, lifestyle and wellness |
 
 ## About Rooted
