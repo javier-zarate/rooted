@@ -16,7 +16,7 @@ export const CollectionTileContent = styled.div`
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  align-item: center;
+  align-items: center;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -38,10 +38,13 @@ export const Title = styled.div`
   font-weight: bold;
   border-radius: 10px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+  background: ${props => props.sale ? 'red' : 'none'};
 `;
 
 export const Description = styled.div`
   font-size: 20px;
   margin: 10px;
-  birder-radius: 10px;
+  border-radius: 10px;
+  background: ${props => props.sale ? 'red' : 'none'};
+  padding: 10px;
 `;

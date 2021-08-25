@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const query = graphql`
   {
-    allShopifyCollection(sort: {fields: title, order: ASC }) {
+    allShopifyCollection(sort: { fields: title, order: ASC }) {
       edges {
         node {
           title
@@ -20,6 +20,12 @@ const query = graphql`
           }
           products {
             ...ShopifyProductFields
+            handle
+            priceRange {
+              minVariantPrice {
+                amount
+              }
+            }
           }
         }
       }
