@@ -9,7 +9,7 @@ export function HomePageCollectionsGrid({ collections }) {
   const remainingCollections = collections.filter(
     collection => collection.title !== 'SALE'
   );
-  console.log(collections);
+
   return (
     <div>
       {!!saleCollection && (
