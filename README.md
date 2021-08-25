@@ -45,6 +45,7 @@ Shopify is used only to render the products and to checkout with their [payment 
 - [React](https://reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Javascript](https://www.javascript.com/)
+- [GraphQL](https://graphql.org/)
 - [HTML/CSS](https://www.w3.org/standards/webdesign/htmlcss.html)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://www.npmjs.com/package/axios)
