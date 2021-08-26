@@ -12,7 +12,7 @@
     <img src="https://oneclick.amplifyapp.com/button.svg" alt="Deploy to Amplify Console">
 </a>
 
-(to be deployed soon, under development)
+(soon to be deployed, under development)
 
 ## Features
 ---
