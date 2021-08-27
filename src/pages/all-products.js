@@ -1,6 +1,15 @@
 import React, { useContext } from 'react';
-import { Layout } from 'components';
+import styled from 'styled-components';
+import { Layout, Filters } from 'components';
 import ProductContext from 'context/ProductContext';
+
+// cant add additonal file for styles in Gatsby under pages folder
+const Content = styled.div`
+  display: grid;
+  grid-gap:  20px;
+  margin-top: 20px;
+  grid-template-columns: 1fr 3fr;
+`;
 
 export default function AllProducts() {
   const { products, collections } = useContext(ProductContext);
@@ -8,11 +17,10 @@ export default function AllProducts() {
   return (
     <Layout>
       <h1>{products.length} products</h1>
-      <div>
-        {collections.map(collection => (
-          <div key={collection.shopifyId}>{collection.title}</div>
-        ))}
-      </div>
+      <Content>
+        <Filters />
+        <div>Products</div>
+      </Content>
     </Layout>
   );
 }
