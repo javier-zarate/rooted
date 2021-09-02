@@ -1,4 +1,4 @@
-<img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.18169-9/13754348_1735577500046419_9134668357838244508_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=lMF_O5nM_GQAX8BZQQW&_nc_ht=scontent-lax3-2.xx&oh=8b1c5c63ce6ab45ea7bb202de283f1ff&oe=612813E5" alt="logo" width="250" height="250" />
+<img src="https://images.squarespace-cdn.com/content/v1/5ea6f9c57f6fa950ad1d070a/1588097910346-DIWZELYF40NRES97A35L/Rooted+Landscape.jpg" alt="logo" width="400" height="250" />
 
 
 [![Github Issues](https://img.shields.io/github/issues/javier-zarate/rooted)](https://github.com/javier-zarate/rooted/issues)
