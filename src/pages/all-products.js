@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { Layout, Filters, ProductsGrid } from 'components';
+import { Layout, Filters, ProductsGrid, SEO } from 'components';
 import ProductContext from 'context/ProductContext';
 import queryString from 'query-string';
 import { useLocation } from '@reach/router';
@@ -61,6 +61,7 @@ export default function AllProducts() {
 
   return (
     <Layout>
+      <SEO description="Rooted all products" title="All products" />
       {!!searchTerm && !!filteredProducts.length && (
         <h3>
           Search term: <strong>'{searchTerm}'</strong>

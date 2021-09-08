@@ -12,6 +12,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO description="Rooted Home Page" title="Homepage" />
       <HomePageCollectionsGrid
         collections={collections.filter(
           collection => collection.title !== 'Featured'
