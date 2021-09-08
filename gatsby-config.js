@@ -45,13 +45,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-shopify-starter`,
-        short_name: `starter`,
+        name: `RootedFamily`,
+        short_name: `rooted`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/logo.png`,
       },
     },
   ],

@@ -13,6 +13,8 @@ export function CartContents() {
     updateLineItem({ quantity, variantId });
   };
 
+  console.log(checkout?.lineItems?.length)
+
   return (
     <section>
       <h1>Your Cart</h1>
@@ -50,7 +52,7 @@ export function CartContents() {
         <div>${checkout?.totalPrice}</div>
       </CartFooter>
       )}
-      {!checkout?.lineItems && (
+      {(!checkout?.lineItems || checkout?.lineItems.length === 0) && (
         <h4>Your cart is empty. <br />Treat yourself and add something.</h4>
       )}
       <Footer>
