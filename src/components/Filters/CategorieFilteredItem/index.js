@@ -9,6 +9,7 @@ export function CategorieFilteredItem({ title, id }) {
   const qs = queryString.parse(search);
   const collectionIds = qs.c?.split(',').filter(c => !!c) || [];
   const checked = collectionIds?.find(cId => cId === id);
+  const searchTerm = qs.s;
 
   const onClick = () => {
     let naviagateTo = '/all-products';
@@ -25,9 +26,13 @@ export function CategorieFilteredItem({ title, id }) {
       newIds = collectionIds.map(cId => encodeURIComponent(cId));
     }
 
-    if (newIds.length) {
+    if (newIds.length && !searchTerm) {
       navigate(`${naviagateTo}?c=${newIds.join(',')}`);
-    } else {
+    } else if (newIds.length && !!searchTerm)  {
+      navigate(`${naviagateTo}?c=${newIds.join(',')}&s=${encodeURIComponent(searchTerm)}`)
+    } else if (!newIds.length && !!searchTerm) {
+      navigate(`${naviagateTo}?s=${encodeURIComponent(searchTerm)}`);
+    }else {
       navigate(`${naviagateTo}`);
     }
 

@@ -16,14 +16,15 @@ const Content = styled.div`
 export default function AllProducts() {
   const { products, collections } = useContext(ProductContext);
   const collectionProductMap = {};
-  const {search} = useLocation();
-  const  qs = queryString.parse(search);
+  const { search } = useLocation();
+  const qs = queryString.parse(search);
   const selectedCollectionIds = qs.c?.split(',').filter(c => !!c) || [];
   const selectedCollectionIdsMap = {};
+  const searchTerm = qs.s;
 
   selectedCollectionIds.forEach(collectionIds => {
     selectedCollectionIdsMap[collectionIds] = true;
-  })
+  });
 
   if (collections) {
     collections.forEach(collection => {
@@ -35,7 +36,7 @@ export default function AllProducts() {
     });
   }
 
-  const filterByCategory = (product) => {
+  const filterByCategory = product => {
     if (Object.keys(selectedCollectionIdsMap).length) {
       for (let key in selectedCollectionIdsMap) {
         if (collectionProductMap[key]?.[product.shopifyId]) {
@@ -47,16 +48,52 @@ export default function AllProducts() {
     return true;
   };
 
-  const filteredProducts = products.filter(filterByCategory);
+  const filterBySearchTerm = product => {
+    if (searchTerm) {
+      return product.title.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0;
+    }
+    return true;
+  };
+
+  const filteredProducts = products
+    .filter(filterByCategory)
+    .filter(filterBySearchTerm);
 
   return (
     <Layout>
-      <h1>{filteredProducts.length} products</h1>
+      {!!searchTerm && !!filteredProducts.length && (
+        <h3>
+          Search term: <strong>'{searchTerm}'</strong>
+        </h3>
+      )}
+      {!!filteredProducts.length && <h4>{filteredProducts.length} products</h4>}
       <Content>
         <Filters />
-        <div>
-          <ProductsGrid products={filteredProducts} />
-        </div>
+        {!filteredProducts.length && (
+          <div>
+            <h3>
+              <span>Oh no! Nothing matches</span>
+              &nbsp;
+              <strong>'{searchTerm}'</strong>
+            </h3>
+            <div>
+              To help with your search try:
+              <br />
+              <br />
+              <br />
+              <ul>
+                <li>Checking your spelling</li>
+                <li>Using less words</li>
+                <li>Try a different search</li>
+              </ul>
+            </div>
+          </div>
+        )}
+        {!!filteredProducts.length && (
+          <div>
+            <ProductsGrid products={filteredProducts} />
+          </div>
+        )}
       </Content>
     </Layout>
   );
