@@ -13,4 +13,12 @@ export const Input = styled.input`
   &:focus{
     border-color: black:
   }
+
+  @media(max-width: 385px) {
+    width: 160px;
+  }
+
+  @media(max-width: 320px) {
+    width: 120px;
+  }
 `;

@@ -21,4 +21,16 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
   &:hover{
     text-decoration: underline;
   }
+
+  @media(max-width: 768px) {
+    >div:last-child {
+      display: none;
+    }
+  }
+
+  @media(min-width: 768px) {
+    >div:nth-last-child(2) {
+      display: none;
+    }
+  }
 `;
