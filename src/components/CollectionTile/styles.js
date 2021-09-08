@@ -39,7 +39,6 @@ export const CollectionTileContent = styled.div`
       text-transform: uppercase;
       border-radius: 5px;
       text-decoration: none;
-      cursor: pointer;
 
       &:hover {
         color: white;
