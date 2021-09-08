@@ -24,7 +24,7 @@
 | View Cart | &#10004; | View items in your cart, edit or delete quantity |
 | Shopify Collection Tiles on Landing Page | &#10004; | Product collections are rendered  (Featured, Sales, Season etc)|
 | Filter Products| &#10004; | Navigation contains search field to find products by name or category |
-| Checkout | &#10060; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
+| Checkout | &#10004; | Checkout and purchase items. Payments are processed using [Shopify API](https://shopify.dev/api/admin/rest/reference) |
 | About Page | &#10060; | Mission statement page and description about store owner and production process |
 | User Reviews | &#10060; | Slideshow of user reviews (mix of Instagram DM's and in site review |
 | Leave a review | &#10060; | use Instagram API to have user name and avatar or anonymous review as well ass paginated review page (sorted by rating or date |

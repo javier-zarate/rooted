@@ -18,7 +18,7 @@ export function Cart() {
       <FaShoppingCart size="1.5em" />
       <div>{!!totalQuantity && (totalQuantity || '')}</div>
       <div>
-        {totalQuantity} items (s) / ${checkout?.totalPrice || '0.00'}
+        {totalQuantity} item (s) / ${checkout?.totalPrice || '0.00'}
       </div>
     </CartWrapper>
   );
