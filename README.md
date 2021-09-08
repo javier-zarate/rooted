@@ -39,7 +39,7 @@ The Rooted site then connects to the [Shopify API](https://shopify.dev/api/admin
 Customers can browse and checkout on the site, payments are processed again by connecting to [Shopify API](https://shopify.dev/api/admin/rest/reference).
 Shopify is used only to render the products and to checkout with their [payment platform](https://www.shopify.com/payment-gateways).
 
-## Technologies
+## Technologies & Packages
 ---
 - [Gatsy.js](https://www.gatsbyjs.com/)
 - [React](https://reactjs.org/)
@@ -49,6 +49,10 @@ Shopify is used only to render the products and to checkout with their [payment 
 - [HTML/CSS](https://www.w3.org/standards/webdesign/htmlcss.html)
 - [Styled Components](https://styled-components.com/)
 - [Axios](https://www.npmjs.com/package/axios)
+- [shopify-buy](https://www.npmjs.com/package/shopify-buy)
+- [@reach/router](https://reach.tech/router/)
+- [query-string](https://www.npmjs.com/package/query-string)
+- [react-icons](https://react-icons.github.io/react-icons/)
 - [ESlint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [NPM](https://www.npmjs.com/)
