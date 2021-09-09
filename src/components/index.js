@@ -17,4 +17,5 @@ export * from './ProductTile';
 export * from './Filters';
 export * from './Checkbox';
 export * from './Search';
+export * from './Footer';
 

@@ -3,24 +3,22 @@ import {
   Layout,
   SEO,
   HomePageCollectionsGrid,
-  FeaturedProduct,
+  // FeaturedProduct,
 } from 'components';
 import ProductContext from 'context/ProductContext';
 
 const IndexPage = () => {
   const { collections } = useContext(ProductContext);
-
+  console.log(!!collections);
   return (
     <Layout>
       <SEO description="Rooted Home Page" title="Homepage" />
-      <HomePageCollectionsGrid
-        collections={collections.filter(
-          collection => collection.title !== 'Featured'
-        )}
-      />
-      {!!collections.find(collection => collection.title === 'Featured') && (
-        <FeaturedProduct />
-      )}
+        <HomePageCollectionsGrid
+          collections={collections.filter(
+            collection => collection.title !== 'Featured'
+          )}
+        />
+        {/* <FeaturedProduct /> */}
     </Layout>
   );
 };
