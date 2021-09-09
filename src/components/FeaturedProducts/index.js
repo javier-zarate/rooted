@@ -9,7 +9,7 @@ export function FeaturedProduct() {
 
   return (
     <section>
-      <h1>Featured Products</h1>
+      <h1>Products</h1>
       <ProductsGrid products={featuredCollection.products}/>
     </section>
   );

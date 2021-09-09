@@ -11,6 +11,11 @@ const Content = styled.div`
   grid-gap: 20px;
   margin-top: 20px;
   grid-template-columns: 1fr 3fr;
+
+  @media(max-width: 680px) {
+    grid-template-columns: 1fr;
+
+  }
 `;
 
 export default function AllProducts() {

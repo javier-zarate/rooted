@@ -38,4 +38,8 @@ export const Button = styled.button`
     color: #999;
 
   }
+
+  @media (max-width: 360px) {
+    font-size: 12px;
+  }
 `;
