@@ -1,9 +1,11 @@
 import React from 'react';
-import { LegalWrapper } from 'components';
+import { LegalWrapper, SEO} from 'components';
 
 export default function RefundPolicy() {
   return (
     <LegalWrapper>
+      <SEO description="Rooted Refund Policy" title="Refund Policy" />
+      <h2>Refund Policy</h2>
       <p>
         We have a 30-day return policy, which means you have 30 days after
         receiving your item to request a return.

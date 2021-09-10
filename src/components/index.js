@@ -19,4 +19,5 @@ export * from './Checkbox';
 export * from './Search';
 export * from './Footer';
 export * from './Legal';
+export * from './MainTile';
 

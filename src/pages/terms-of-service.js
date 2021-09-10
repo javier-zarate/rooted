@@ -1,9 +1,10 @@
 import React from 'react';
-import { LegalWrapper } from 'components';
+import { LegalWrapper, SEO} from 'components';
 
 export default function TermsOfService() {
   return (
     <LegalWrapper>
+      <SEO description="Rooted Terms of Service" title="Terms of Service" />
       <h2>Terms of Service</h2>
       <p>
         <strong>OVERVIEW</strong>

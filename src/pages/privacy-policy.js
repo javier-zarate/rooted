@@ -1,9 +1,10 @@
 import React from 'react';
-import {LegalWrapper} from 'components';
+import { LegalWrapper, SEO} from 'components';
 
 export default function PrivacyPolicy() {
   return (
     <LegalWrapper>
+      <SEO description="Rooted Privacy Policy" title="Privacy Policy" />
       <h2>Privacy policy</h2>
       <p>
         This Privacy Policy describes how rootedfamily.myshopify.com (the
