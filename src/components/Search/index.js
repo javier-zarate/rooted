@@ -23,6 +23,8 @@ export function Search() {
     } else {
       navigate(`/all-products?s=${encodeURIComponent(searchTerm)}`);
     }
+
+    setSearchTerm('')
   };
 
   return (
@@ -32,7 +34,7 @@ export function Search() {
         onChange={e => setSearchTerm(e.currentTarget.value)}
         placeholder="Search"
       />
-      <Button>
+      <Button style={{borderRadius: "0px"}}>
         <FaSearch />
       </Button>
     </SearchForm>

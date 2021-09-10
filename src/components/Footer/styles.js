@@ -26,10 +26,14 @@ export const FooterWrapper = styled.footer`
 
     >a {
       padding: 5px;
+      color: #9A9A9A;
     }
 
     >a:hover {
       color: black;
+    }
+    >a:visited {
+      color: #9A9A9A
     }
   }
   /* Developer: copyright */

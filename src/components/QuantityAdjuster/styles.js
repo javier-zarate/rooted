@@ -13,4 +13,10 @@ export const AdjusterButton = styled.div`
   cursor: pointer;
   border: 1px solid black;
   font-weight: bold;
+  border-radius: 5px;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
 `;
