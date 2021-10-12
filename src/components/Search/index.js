@@ -21,7 +21,7 @@ export function Search() {
         )}&c=${encodeURIComponent(c)}`
       );
     } else {
-      navigate(`/all-products?s=${encodeURIComponent(searchTerm)}`);
+      navigate(`/all-products/?s=${encodeURIComponent(searchTerm)}`);
     }
 
     setSearchTerm('')

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainTileWrapper, MainTileContent, Title } from './styles';
+import { MainTileWrapper, MainTileContent, Title, SubTitle } from './styles';
 import BackgroundImage from 'gatsby-background-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -22,6 +22,7 @@ export function MainTile() {
       <MainTileContent>
         <div>
           <Title>Rooted</Title>
+          <SubTitle>From my family to yours.</SubTitle>
         </div>
       </MainTileContent>
     </MainTileWrapper>

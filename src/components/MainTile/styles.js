@@ -4,6 +4,7 @@ export const MainTileWrapper = styled.div`
   height: 500px;
   max-height: 100vh;
   display: flex;
+  position: relative;
   margin-bottom: 5px;
 
   > div {
@@ -21,7 +22,7 @@ export const MainTileContent = styled.div`
   height: 100%;
   color: white;
   text-decoration: none;
-  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(0, 0, 0, 0.2);
   text-align: center;
 
   > div {
@@ -38,4 +39,11 @@ export const Title = styled.div`
   font-weight: bold;
   border-radius: 10px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+`;
+
+export const SubTitle = styled.div`
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
 `;

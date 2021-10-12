@@ -4,7 +4,7 @@ import {
   SEO,
   HomePageCollectionsGrid,
   // FeaturedProduct,
-  MainTile
+  MainTile,
 } from 'components';
 import ProductContext from 'context/ProductContext';
 
@@ -15,12 +15,12 @@ const IndexPage = () => {
     <Layout>
       <SEO description="Rooted Home Page" title="Homepage" />
       <MainTile />
-        <HomePageCollectionsGrid
-          collections={collections.filter(
-            collection => collection.title !== 'Featured'
-          )}
-        />
-        {/* <FeaturedProduct /> */}
+      <HomePageCollectionsGrid
+        collections={collections.filter(
+          collection => collection.title !== 'Featured'
+        )}
+      />
+      {/* <FeaturedProduct /> */}
     </Layout>
   );
 };
