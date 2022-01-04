@@ -29,7 +29,7 @@ export function ProductQuantityAdder({ available, variantId }) {
           value={quantity}
           onChange={handleQuantityChange}
         />
-        <Button type="submit" disabled={!available} fullWidth style={{borderRadius: "0px"}}>
+        <Button type="submit" disabled={!available} fullWidth style={{background: "white", color: "black", border: "1px solid black", borderRadius: "5px"}}>
           Add to cart
         </Button>
       </form>
