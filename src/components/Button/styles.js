@@ -25,9 +25,9 @@ export const Button = styled.button`
   border: 1px solid black;
   border-radius: 5px;
   white-space: nowrap;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
   ${fullWidthStyles}
 
   &:hover:not(disabled) {
