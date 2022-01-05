@@ -7,6 +7,8 @@
 
 ### A Simple eCommerce Site for Purchasing Homemade Health and Wellness Products :handbag:
 
+<a href="https://www.rootedfamily.store/" target="_blank" rel="noreferrer noopener"> https://www.rootedfamily.store/ </a>
+
 ## Features
 ---
 | Feature  |  Coded?       | Description  |
