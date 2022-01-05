@@ -17,8 +17,8 @@ export default function RefundPolicy() {
         <br />
         <br />
         To start a return, you can contact us at&nbsp;
-        <a href="mailto:javalzar17@gmail.com" target="_top">
-          javalzar17@gmail.com
+        <a href="mailto:contact.rooted.family@gmail.com" target="_top">
+        contact.rooted.family@gmail.com
         </a>
         . If your return is accepted, we&rsquo;ll send you a return shipping
         label, as well as instructions on how and where to send your package.
@@ -27,8 +27,8 @@ export default function RefundPolicy() {
         <br />
         <br />
         You can always contact us for any return question at&nbsp;
-        <a href="mailto:javalzar17@gmail.com" target="_top">
-          javalzar17@gmail.com
+        <a href="mailto:contact.rooted.family@gmail.com" target="_top">
+        contact.rooted.family@gmail.com
         </a>
         .
       </p>

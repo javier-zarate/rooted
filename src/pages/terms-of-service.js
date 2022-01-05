@@ -417,7 +417,7 @@ export default function TermsOfService() {
         <strong>SECTION 20 - CONTACT INFORMATION</strong>
         <br />
         Questions about the Terms of Service should be sent to us at
-        javalzar17@gmail.com.
+        contact.rooted.family@gmail.com.
       </p>
     </LegalWrapper>
   );

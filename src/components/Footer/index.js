@@ -14,7 +14,7 @@ export function Footer() {
         >
           <FaInstagram />
         </a>
-        <a href='mailto: javierzarate0614@gmail.com'>
+        <a href='mailto: contact.rooted.family@gmail.com'>
           <FaRegEnvelope />
         </a>
       </div>

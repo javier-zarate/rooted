@@ -392,9 +392,9 @@ export default function PrivacyPolicy() {
       <p>
         For more information about our privacy practices, if you have questions,
         or if you would like to make a complaint, please contact us by e-mail at
-        javalzar17@gmail.com or by mail using the details provided below:
+        contact.rooted.family@gmail.com or by mail using the details provided below:
       </p>
-      <p>4005 leight st, Riverside CA 92509, United States</p>
+      <p>28871 Avenida Estrella, Menifee CA 92587, United States</p>
       <p>
         <em>
           <em>Last updated: September 9, 2021</em>
