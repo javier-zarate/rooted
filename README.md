@@ -52,4 +52,3 @@ Shopify is used only to render the products and to checkout with their [payment 
 - [ESlint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [NPM](https://www.npmjs.com/)
-- 
