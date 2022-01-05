@@ -3,16 +3,9 @@
 
 [![Github Issues](https://img.shields.io/github/issues/javier-zarate/rooted)](https://github.com/javier-zarate/rooted/issues)
 [![Latest Github Release](https://img.shields.io/github/v/tag/javier-zarate/rooted?label=release)](https://github.com/javier-zarate/rooted/releases)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c005c452-cd22-462f-973f-d854ad4f300f/deploy-status)](https://app.netlify.com/sites/admiring-roentgen-43ec1f/deploys)
 
 ### A Simple eCommerce Site for Purchasing Homemade Health and Wellness Products :handbag:
-
-## Deployed
----
-<a href="https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/username/repository">
-    <img src="https://oneclick.amplifyapp.com/button.svg" alt="Deploy to Amplify Console">
-</a>
-
-(soon to be deployed, under development)
 
 ## Features
 ---
